@@ -21,17 +21,22 @@ public class ThermalComparator {
                 ugol = -72;
             } else {
                 ugol = -36;
-            };
+            }
             JOptionPane.showMessageDialog(null, "Вода холодная, большой влево на " + ugol + " градусов.");
         } else if (temp == 20 || temp < 30) {
             if (temp == 20) {
                 ugol = -54;
             } else {
                 ugol = -27;
-            };
+            }
             JOptionPane.showMessageDialog(null, "Вода прохладная, небольшой влево на " + ugol + " градусов.");
         } else {
+            if (temp == 40) {
+                ugol = -18;
+            } else {
+                ugol = 0;
+            }
             JOptionPane.showMessageDialog(null, "Вода тёплая: нуль");
-        };
+        }
     }
 }
